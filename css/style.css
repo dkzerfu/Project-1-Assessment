@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    padding: 50%;
+    margin: 50%;
+    text-align: center;
+}
+.value {
+    padding-bottom: 30px;
+    font-size: 60px;
+}
+.input{
+    text-align: center;
+    width: 100px;
+    height: 70px;
+    border-radius: 20px solid black;
+    font-size: 50px;
+}
+.add{
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+    font-size: 30px;
+    color: white;
+    margin-right: 20px;
+    
+
+}
+.minus{
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+    font-size: 30px;
+    border: none;
+    color: white;
+    margin-left: 20px;
+}
+.add:hover{
+    background-color: white;
+    color: black;
+}
+.minus:hover{
+    background-color: white;
+    color: black;
+}
