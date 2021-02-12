@@ -7,10 +7,10 @@ body{
     align-items: center;
 }
 .container{
-    height: 100%;
-    width: 100%;
-    padding: 50%;
-    margin: 50%;
+    height: 50%;
+    width: 50%;
+    padding: 25%;
+    margin: 25%;
     text-align: center;
 }
 .value {
@@ -19,9 +19,10 @@ body{
 }
 .input{
     text-align: center;
-    width: 100px;
+    width: 150px;
     height: 70px;
-    border-radius: 20px solid black;
+    border: solid gray;
+    border-radius: 15px;
     font-size: 50px;
 }
 .add{
@@ -29,6 +30,7 @@ body{
     width: 70px;
     border-radius: 10px;
     font-size: 30px;
+    border: none;
     color: white;
     margin-right: 20px;
     
@@ -45,9 +47,9 @@ body{
 }
 .add:hover{
     background-color: white;
-    color: black;
+    color: gray;
 }
 .minus:hover{
     background-color: white;
-    color: black;
+    color: gray;
 }

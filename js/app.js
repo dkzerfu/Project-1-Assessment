@@ -11,7 +11,7 @@ var currentValue;
 var maxInput = 200;
 
 console.log(currentValue)
-display.innerText = initialValue;
+display.innerText = '0';
 
 plusButton.addEventListener('click', () => {
     if (currentValue >= maxInput){
@@ -24,8 +24,8 @@ plusButton.addEventListener('click', () => {
 
 })
 minusButton.addEventListener('click', () => {
-    if (currentValue >= maxInput){
-        display.innerText = currentValue--
+    if (currentValue <= maxInput){
+        display.innerText = -1 * currentValue --;
     }else{
 
         display.innerText = currentValue --;
