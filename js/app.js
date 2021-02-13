@@ -6,29 +6,33 @@ let display = document.querySelector('.value');
 
 
 input.addEventListener('input', updateValue)
-var initialValue = 0;
+var initialValue = 1;
 var currentValue;
-var maxInput = 200;
+currentValue = initialValue
+// currentValues = initialValue - 200 ;
 
 console.log(currentValue)
-display.innerText = '0';
+//display.innerText = initialValue;
 
 plusButton.addEventListener('click', () => {
-    if (currentValue >= maxInput){
-        display.innerText = currentValue 
-    }else{
-        display.innerText = currentValue ++;
-
-    }
+    // if (currentValue >= maxInput){
+    //     display.innerText = currentValue 
+    // }else{
+        display.innerText = currentValue++
+        //display.innerText = currentValue ++;
+    // }
 
 
 })
 minusButton.addEventListener('click', () => {
-    if (currentValue <= maxInput){
-        display.innerText = -1 * currentValue --;
-    }else{
+    if (currentValue == 200){
+        currentValue = -currentValue + initialValue
+        display.innerText =currentValue;
+    }
+    else if (currentValue < 200){
+        currentValue = currentValue - initialValue
+        display.innerText = currentValue;
 
-        display.innerText = currentValue --;
     }
 
 })
